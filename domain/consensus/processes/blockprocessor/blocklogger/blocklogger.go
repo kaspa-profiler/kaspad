@@ -15,7 +15,7 @@ var (
 	receivedLogBlocks       int64
 	receivedLogHeaders      int64
 	receivedLogTransactions int64
-	lastBlockLogTime        time.Time
+	lastBlockLogTime        = time.Now()
 )
 
 // LogBlock logs a new block blue score as an information message
